@@ -1,0 +1,16 @@
+ 
+
+SLO: e.g. let’s say we will respond 95% of the reqs in 2 secs # hits/sec for the users. How many users we want to process if the request comes for all the users. what should be the system
+validic api: We should know the frequency of the requests from the api. Right now, it is 3 hours cron job? speed and volume of the data coming from the validic to baseline
+Do we haveduplication of the messages/events in our stream and how to handle duplication?
+Data reliability: For the activity whether we have user information or not. both of the activity and user queues are dependent but think of edge cases? 
+Encoding of the messages: forward and backward schema compatibility
+fault tolerance of the rabbitMQ ? 
+events
+number of partitions for the topics? right now we have 1
+hyper log log to check the duplication of the messages from the queues. what if same id comes in again
+kafka supports one schematics? [Are we using Exactly one delivery semantics or at least once? If at least once, how are we protecting from dups]
+always save the activity data and score with timestamp what if in future they change the process of calculating the score [Look at the concept of event sourcing]
+when to use kafka and spark? do we really need spark? exercise
+check the frequency of polling by the kafka consumer on spark?
+if the spark job is slower then there will be a lot of back pressure on the kafka queues and it will affect the hits/requests being served
