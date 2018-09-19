@@ -39,25 +39,4 @@ Amazon EFS
  
 
 
-Here is the analysis of the issue and also the possible resolution.
- 
-Story: DDEV-XXXX ( Convert email along with respective attachment (PDF to PDF) to a single file and save to an internal folder)
- 
-We had a Jira story to read an email from Outlook mailbox and convert to PDF and save to an internal folder. On 08/09, team requested the port details for outlook mailbox created by tech support team. Team initially had challenges accessing the mailbox as it had to be a service account enabled access, ticket was put in with tech support team (08/09) and tech support team created the service account on 08/16. Team had further issues accessing as the firewall was blocking the port 993 and requested to open up for one developers IP to test it out, ticket opened on 08/21 and got a response from tech support team on 08/24 (tech support team Response - Individual IP’s can’t be granted access to the mailbox).
- 
-Further diagnosis of the issue got us to the resolution. The current resolution being looked at is to open a list of subnets and security groups on AWS to access the outlook. 
- 
- 
- 
- Major action items for the team post stand up today
- 
- Access to the outlook mailbox for the dev and test environment. Currently, we already have a firewall request #44 to open imap traffic on Port #993.
-Use SMB file sharing protocol on the dev environment to access the email and pdf files on the network shared folder location. Locally, files could be accessed without using SMB.
-Set up PostgreSQL Database for the test environment. Right now, we have PostgreSQL Database for the dev environment.
-Provide separate network folder location for the test environment like we have for the dev environment.
-Moving forward we need to have sprint demos on dev environment. Features demoed locally in Sprint 1.1 didn’t work as expected on dev environment.
-
-
-Right now, we have a rest controller using IMAP protocol using JavaMail to connect to the O365 with the service account details that were provided by AGT team. Next sprint we are planning to use Apache Camel route.
-
 
