@@ -14,3 +14,14 @@ always save the activity data and score with timestamp what if in future they ch
 when to use kafka and spark? do we really need spark? exercise
 check the frequency of polling by the kafka consumer on spark?
 if the spark job is slower then there will be a lot of back pressure on the kafka queues and it will affect the hits/requests being served
+
+https://spring.io/guides/gs/circuit-breaker/ . circuit breaker
+https://activemq.apache.org/artemis/docs/1.0.0/duplicate-detection.html
+death queue: http://activemq.apache.org/message-redelivery-and-dlq-handling.html
+
+
+
+
+
+
+
