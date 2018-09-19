@@ -18,10 +18,5 @@ if the spark job is slower then there will be a lot of back pressure on the kafk
 https://spring.io/guides/gs/circuit-breaker/ . circuit breaker
 https://activemq.apache.org/artemis/docs/1.0.0/duplicate-detection.html
 death queue: http://activemq.apache.org/message-redelivery-and-dlq-handling.html
-
-
-
-
-
-
+apache camel
 
