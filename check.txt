@@ -15,6 +15,8 @@ when to use kafka and spark? do we really need spark? exercise
 check the frequency of polling by the kafka consumer on spark?
 if the spark job is slower then there will be a lot of back pressure on the kafka queues and it will affect the hits/requests being served
 
+
+use smbj lib over jcifs as it uses smb2 and smb3 protocol. 
 https://spring.io/guides/gs/circuit-breaker/ . circuit breaker
 https://activemq.apache.org/artemis/docs/1.0.0/duplicate-detection.html
 
