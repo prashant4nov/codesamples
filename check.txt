@@ -36,6 +36,8 @@ https://kb.netgear.com/23576/What-file-sharing-protocols-can-I-use-to-access-the
  
 Amazon EC2 S3 bucket vs elastic file sharing
 Amazon EFS
+
+https://github.com/hierynomus/smbj/issues/253
  
 
 
