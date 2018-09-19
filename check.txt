@@ -17,6 +17,28 @@ if the spark job is slower then there will be a lot of back pressure on the kafk
 
 https://spring.io/guides/gs/circuit-breaker/ . circuit breaker
 https://activemq.apache.org/artemis/docs/1.0.0/duplicate-detection.html
+
+incase of failure messages push it to death letter queue
 death queue: http://activemq.apache.org/message-redelivery-and-dlq-handling.html
 apache camel
+
+
+imap you can read and write both pop3 only read
+(NTLM) is the authentication protocol
+smbj protocol faster than smb2 
+
+https://jcifs.samba.org/ (samba)
+
+ 
+Here are comparisons between Amazon EC2 and  EFS for file storage.
+ 
+https://kb.netgear.com/23576/What-file-sharing-protocols-can-I-use-to-access-the-shares-on-my-ReadyDATA-storage-system
+ 
+Amazon EC2 S3 bucket vs elastic file sharing
+Amazon EFS
+ 
+ 
+ 
+
+
 
